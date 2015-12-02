@@ -42,3 +42,19 @@
     color: rgb(233,50,117);
     font-size: 5rem;
 }
+
+.point {
+     position: relative;
+     padding: 2rem;
+     text-align: center;
+     opacity: 0;
+     -webkit-transform: scaleX(0.6) translateY(3rem);
+     -moz-transform: scaleX(0.6) translateY(3rem);
+     transform: scaleX(0.6) translateY(3rem);
+     -webkit-transition: all 0.25s ease-out;
+     -moz-transition: all 0.25s ease-out;
+     transition: all 0.25s ease-out;
+     -webkit-transition-delay: 0.1s;
+     -moz-transition-delay: 0.1s;
+     transition-delay: 0.1s;
+ }
