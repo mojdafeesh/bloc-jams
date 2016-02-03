@@ -90,12 +90,12 @@ window.onload = function() {
 
   albumImage.addEventListener("click", function( event ) {
 
-    setCurrentAlbum(albums[count]);
+    setCurrentAlbum(albums[index]);
 
-    count++;
+    index++;
 
-    if( count === albums.length ){
-      count = 0;
+    if( index === albums.length ){
+      index = 0;
     }
 
   }, false);
