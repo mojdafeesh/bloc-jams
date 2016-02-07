@@ -1,3 +1,4 @@
+
  // Example Album
  var albumPicasso = {
      name: 'The Colors',
@@ -105,11 +106,11 @@ window.onload = function() {
     
    for (i = 0; i < songRows.length; i++) {
          songRows[i].addEventListener('mouseleave', function(event) {
-           // Selects first child element, which is the song-item-number element
+             // Revert the content back to the number
+             // Selects first child element, which is the song-item-number element
              this.children[0].innerHTML = this.children[0].getAttribute('data-song-number');
-
          });
-    }    
+     }
     
   var index = 0;
   var albumImage = document.getElementsByClassName('album-cover-art')[0];
@@ -128,5 +129,3 @@ window.onload = function() {
   }, false);
 
 };
-
-
