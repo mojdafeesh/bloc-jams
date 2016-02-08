@@ -172,32 +172,31 @@ window.onload = function() {
 
 };
 
-var findParentByClassName = function(element, targetClass) {
+/*var findParentByClassName = function(element, targetClass) {
     var existingParent = element.parentElement;
     while (existingParent.className != targetClass) {
         existingParent = existingParent.parentElement;
     }
     return existingParent;
-};
+};*/
 
-/*
-var findParentByClassName = function(element, wantedClass){
+var findParentByClassName = function(element, targetClass){
 
   // Assign the element's parent that we're checking to a variable
-  var currentParent = element.parentElement;
+  var existingParent = element.parentElement;
 
   // Check if the current parent exists
-  if (currentParent) {
+  if (existingParent) {
 
     // If the element's parent class that we're on isn't the same as the target class we want,
     // move to the next parent element up
-    while( currentParent.className && currentParent.className != wantedClass ){
-      currentParent = currentParent.parentElement;
+    while( existingParent.className && existingParent.className != targetClass ){
+      existingParent = existingParent.parentElement;
     }
 
     // Return the current parent when a match is found
-    if( currentParent.className === wantedClass ) {
-      return currentParent;
+    if( existingParent.className === targetClass ) {
+      return existingParent;
     // Otherwise alert that there was no class match
     } else {
       alert("No parent found with that class name");
@@ -209,7 +208,6 @@ var findParentByClassName = function(element, wantedClass){
   }
 
 };
-*/
 
 // Always return the song item regardless of the song element selected
 var getSongItem = function(element) {
